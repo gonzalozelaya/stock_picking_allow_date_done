@@ -5,9 +5,6 @@ from odoo import models, fields, api
 class PickingCustom(models.Model):
     _inherit = "stock.picking"
 
-    test_variable = fields.Char(
-        'Test variable', default='/',
-        )
     date_done = fields.Datetime('Date of Transfer', copy=False, readonly=False, help="Date at which the transfer has been processed or cancelled.")
     
     def _action_done(self):
