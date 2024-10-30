@@ -8,7 +8,7 @@
                 <!-- Modifica el campo date_done -->
                 <field name="date_done" position="attributes">
                     <attribute name="invisible">False</attribute>
-                    <attribute name="readonly">state in ('done', 'cancel')</attribute>
+                    <!--<attribute name="readonly">state in ('done', 'cancel')</attribute>-->
                 </field>
             </field>
         </record>
